@@ -15,18 +15,19 @@ body {
 }
 .wrapper h2 {
 	text-transform: uppercase;
-	font-family: poppins;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-bottom: 10%;
 	border-radius: 20px;
 }
 input[type="text"] {
 	height: 40px;
 	border-radius: 20px;
-
-}
-input[type="text"] {
+	margin: 5px 0;
 	font-size: 24px;
-	width:62%
+	width:72.5%;
+	box-sizing: border-box;
+	/*width: calc(100% - 50px); /* Ajusta a largura para alinhar com os botões */
+     /* Garante que o padding e border sejam incluídos na largura total */
 	
 }
 button {
@@ -41,13 +42,8 @@ button {
 	font-family: poppins;
 	letter-spacing: 2px;
 	font-weight: bold;
-}
-input[type="radio"] {
-	width: 20px;
-	height: 20px;
-}
-b {
-	font-size: 30px;
+	cursor: pointer;
+	margin: 5px;
 }
 
 button:hover {

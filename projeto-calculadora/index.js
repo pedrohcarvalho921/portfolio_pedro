@@ -19,7 +19,7 @@ function calcular(i) {
                 total = num1 / num2;
                 break;
             default:
-                total = 'Operação inválida';
+                total = ' ';
         }
 
         document.getElementById('resultArea').innerHTML = `Resultado: ${total}`;
