@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.google.com/share?selection.family=Oswald:wght@200..700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora de Restaurante</title>
+  </head>
+  <body>
+    <main oninput="update()">
+      <h1>Calculadora de Restaurante</h1>
+      <section>
+        <div class="bill">
+          <label for="yourBill">Conta</label>
+          <input 
+            type="number" 
+            placeholder="Valor da Comanda" 
+            id="yourBill"/>
+        </div>
+        <div>
+          <div class="space-between">
+            <label for="">Taxa Percentual</label
+            ><span id="tipPercentage"></span>
+          </div>
+          <input type="range" value="0" id="tipInput" class="range" />
+        </div>
+        <div class="space-between">
+          <span>Valor do Serviço</span>
+          <span id="tipValue"></span>
+        </div>
+        <hr />
+        <div class="space-between total">
+          <span>Total da Mesa</span>
+          <span id="totalWithTip"></span>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div class="space-between">
+            <label for="splitInput">Número de Pessoas</label>
+            <span id="splitValue"></span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="10"
+            value="1"
+            id="splitInput"
+            class="range"
+          />
+        </div>
+        <div class="space-between">
+          <span>Conta Individual (Sem Serviço)</span>
+          <span id="billEach"></span>
+        </div>
+        <div class="space-between">
+          <span>Serviço</span>
+          <span id="tipEach"></span>
+        </div>
+        <hr />
+        <div class="space-between total">
+          <span>Total Por Pessoa</span>
+          <span id="totalWithTipEach"></span>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
